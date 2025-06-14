@@ -1,0 +1,21 @@
+
+
+.banner{
+    /*  Define a imagem de fundo de ser definida */
+    background-image: url(https://picsum.photos/id/1018/1200/300) ;
+
+    /* Centreliza a imagem de fundo no elemento  */
+    background-position: center;
+
+    /* Faz que a imgem cubra todo o elemento, mantendo a proporção  */
+    background-repeat: no-repeat;
+
+    /* Usa o valor padrão, que é scroll, fazendo o fundo rolar com a página *
+    /
+
+    /* Usa o valor padrão, que é "padding-box" a imagem inicia a partir da area do padding  */
+    background-origin: initial;
+
+    /* Usa o valor padrão, que é boder- box, a imagem de fundo se estende até a borda */
+    background-clip: inherit;
+}
