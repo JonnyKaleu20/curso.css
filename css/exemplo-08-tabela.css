@@ -1,8 +1,6 @@
-
-
-.banner{
+.banner {
     /*  Define a imagem de fundo de ser definida */
-    background-image: url(https://picsum.photos/id/1018/1200/300) ;
+    background-image: url(https://picsum.photos/id/1018/1200/300);
 
     /* Centreliza a imagem de fundo no elemento  */
     background-position: center;
@@ -18,4 +16,101 @@
 
     /* Usa o valor padrão, que é boder- box, a imagem de fundo se estende até a borda */
     background-clip: inherit;
+
+    height: 300px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.banner h1 {
+    font-size: 2, 5rem;
+}
+
+.detalhes {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+
+}
+
+.detalhe {
+    background-color: aliceblue;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-5px) scale(1.05);
+
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+.detalhe:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+}
+
+.opcoes{
+    background-color: #fff;
+    max-width: 800px;
+    margin: 40px auto;
+    padding:20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    overflow-x:auto;
+}
+
+.opcoes h2{
+    margin-bottom: 15px;
+    color:blue;
+    text-align: center;
+
+}
+
+.opcoes table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.opcoes th,
+.opcoes td{
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+
+}
+
+.opcoes th{
+    background-color: blue;
+    color: #fff;
+
+}
+
+.opcoes tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+.opcoes tr:hover{
+    background-color: #f1f1f1;
 }
